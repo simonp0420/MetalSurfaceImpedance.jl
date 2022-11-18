@@ -1,4 +1,4 @@
-using RoughSurfaceImpedance
+using MetalSurfaceImpedance
 using Test
 
 @testset "RoughSurfaceImpedance.jl" begin

@@ -18,6 +18,7 @@ You can obtain MetalSurfaceImpedance using Julia's Pkg REPL-mode (hitting `]` as
 
 or with `using Pkg; Pkg.add("MetalSurfaceImpedance")`.
 
+## Exported Functions
 
 The package exports two functions: `Zsurface` and `effective_conductivity`: 
 
