@@ -21,4 +21,6 @@ using Test
     @test Zsurface(1e11, 58e6, 1e-6, :rayleigh) ≈  5.8510e-01 + 2.2346e+00im atol=tol
     @test Zsurface(1e12, 58e6, 1e-6, :rayleigh) ≈  4.8131e+00 + 1.4622e+01im atol=tol
 
+    @test effective_conductivity(10e9, 58e6, 0.5e-6) ≈ 2.276056215432205e7
+
 end
