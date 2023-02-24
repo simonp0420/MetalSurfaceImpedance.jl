@@ -6,7 +6,7 @@
 
 
 A small Julia package to calculate the surface impedance of rough metallic surfaces, useful in microwave
-engineering and computational electromagnetics.  The complex surface impedance (assuming $e^{j\omega t}$ time variation) is computed using a fast rational function approximation of the Gradient model.  The approximation is taken from D. N. Grujić, "Simple and Accurate Approximation of Rough Conductor Surface Impedance," IEEE Trans. Microwave Theory Tech., vol. 70, no. 4, pp. 2053-2059, April 2022.
+engineering and computational electromagnetics.  The complex surface impedance (assuming $e^{j\omega t}$ time variation) is computed using a fast rational function-like approximation of the Gradient model.  The approximation is taken from D. N. Grujić, "Simple and Accurate Approximation of Rough Conductor Surface Impedance," IEEE Trans. Microwave Theory Tech., vol. 70, no. 4, pp. 2053-2059, April 2022.
 
 
 ## Installation
