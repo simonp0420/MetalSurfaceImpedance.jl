@@ -2,7 +2,7 @@
 
 | **Tests**     | **CodeCov**  |
 |:--------:|:-------:|
-|[![CI](https://github.com/simonp0420/MetalSurfaceImpedance.jl/workflows/CI/badge.svg?branch=main)](https://github.com/simonp0420/MetalSurfaceImpedance.jl/actions) | [![codecov.io](https://codecov.io/github/simonp0420/MetalSurfaceImpedance.jl/coverage.svg?branch=main)](https://codecov.io/github/simonp0420/MetalSurfaceImpedance.jl?branch=main) |
+|[![CI](https://github.com/simonp0420/MetalSurfaceImpedance.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/simonp0420/MetalSurfaceImpedance.jl/actions/workflows/CI.yml) | [![codecov.io](https://codecov.io/github/simonp0420/MetalSurfaceImpedance.jl/coverage.svg?branch=main)](https://codecov.io/github/simonp0420/MetalSurfaceImpedance.jl?branch=main) |
 
 
 A small Julia package to calculate the surface impedance of rough metallic surfaces, useful in microwave
