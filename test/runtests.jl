@@ -23,4 +23,8 @@ using Test
 
     @test effective_conductivity(10e9, 58e6, 0.5e-6) ≈ 2.276056215432205e7
 
+    @test iszero(Zsurface(10e9, Inf, 0.0))
+    @test_throws ArgumentError Zsurface(10e9, Inf, 1e-6)
+    @test isinf(effective_conductivity(10e9, Inf, 0.0))
+
 end

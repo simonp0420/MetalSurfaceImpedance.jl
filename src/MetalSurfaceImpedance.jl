@@ -32,6 +32,7 @@ function Zsurface(f, σ₀, Rq, disttype=:normal)
     f > 0 || throw(ArgumentError("frequency f must be positive"))
     σ₀ ≥ 0 || throw(ArgumentError("conductivity σ₀ must be nonnegative"))
     Rq ≥ 0 || throw(ArgumentError("RMS surface roughness Rq must be nonnegative"))
+    isinf(σ₀) && Rq > 0 && throw(ArgumentError("Rq must be zero for infinite conductivity"))
     if disttype == :rayleigh
         fz = (8.697e7, 3.456e9, 9.563e12, Inf)
         fp = (2.128e9, 5.624e13, 1.119e12, Inf)
@@ -47,6 +48,7 @@ function Zsurface(f, σ₀, Rq, disttype=:normal)
     ω = 2π * f
 
     if iszero(Rq)
+        isinf(σ₀) && return zero(ComplexF64)
         δ = sqrt(2.0 / (ω * μ₀ * σ₀))
         Rsmooth = 1.0 / (σ₀ * δ)
         Zsmooth = complex(Rsmooth, Rsmooth)
